@@ -23,7 +23,7 @@
  * main.cpp should remain readable and focused on system setup.
  * ============================================================
  */
-//MODULE 3 TASk B addition 
+ //MODULE 3 TASk B addition 
 #include <iostream>
 #include "rtos_api.h"
 #include "TaskA.h"
@@ -94,7 +94,7 @@ static void WorkerTask(void *params)
 
 int main()
 {
-  
+
    * TODO (Module 2):
    * - Verify RTOS environment setup (build + run)
    * - Confirm baseline task execution and observable output
@@ -103,7 +103,7 @@ int main()
    * - Create RTOS tasks defined in src/tasks/
    * - Assign initial priorities and demonstrate coordination
 
-//MODULE 3 TASk B addition 
+//MODULE 3 TASk B addition
 #include <cstdint>
 #include <iostream>
 
@@ -141,46 +141,46 @@ int main() {
    * - Add synchronization, IPC, and event-driven behavior
    */
 
-  //std::cout << "CESC 450 Module 2 - Host RTOS Baseline (shim)\n";
-  //std::cout << "Goal: verify build/run, RTOS-style API wiring, and GitHub baseline.\n\n";
+   //std::cout << "CESC 450 Module 2 - Host RTOS Baseline (shim)\n";
+   //std::cout << "Goal: verify build/run, RTOS-style API wiring, and GitHub baseline.\n\n";
 
-  // Create baseline tasks (Module 2 demo)
-  //TaskHandle_t hb = nullptr;
-  //TaskHandle_t w1 = nullptr;
+   // Create baseline tasks (Module 2 demo)
+   //TaskHandle_t hb = nullptr;
+   //TaskHandle_t w1 = nullptr;
 
-  //if (!xTaskCreate(HeartbeatTask, "Heartbeat", 256, nullptr, 2, &hb))
-  //{
-    //std::cerr << "Failed to create HeartbeatTask\n";
-    //return 1;
-  //}
+   //if (!xTaskCreate(HeartbeatTask, "Heartbeat", 256, nullptr, 2, &hb))
+   //{
+     //std::cerr << "Failed to create HeartbeatTask\n";
+     //return 1;
+   //}
 
-  //const char *workerName = "A";
-  //if (!xTaskCreate(WorkerTask, "WorkerA", 256, (void *)workerName, 1, &w1))
-  //{
-    //std::cerr << "Failed to create WorkerTask\n";
-    //return 1;
-  //}
+   //const char *workerName = "A";
+   //if (!xTaskCreate(WorkerTask, "WorkerA", 256, (void *)workerName, 1, &w1))
+   //{
+     //std::cerr << "Failed to create WorkerTask\n";
+     //return 1;
+   //}
 
-  //std::cout << "Starting scheduler...\n";
-  //vTaskStartScheduler();
+   //std::cout << "Starting scheduler...\n";
+   //vTaskStartScheduler();
 
-  // In a real RTOS this often never returns. In this host shim it returns when
-  // the demo tasks complete.
-//  std::cout << "\nScheduler exited (all tasks completed). Baseline OK.\n";
+   // In a real RTOS this often never returns. In this host shim it returns when
+   // the demo tasks complete.
+ //  std::cout << "\nScheduler exited (all tasks completed). Baseline OK.\n";
 
-  //int num1;
- // int num2;
+   //int num1;
+  // int num2;
 
 
-/*  std::cout << "\n\n=====================================================\n";
-  std::cout << "\t\tTask A : \n";
-  std::cout << "Enter number 1 : ";
-  //std::cin >> num1; scheduler update 
-  std::cout << "Enter number 2: ";
-  //std::cin >> num2; schduler update 
-  std::cout << "Result: " << RunAddition(num1, num2)<<std::endl;
-  vTaskDelay(2000);
-  PrintTaskOccured();
-  return 0;
-}
-*/
+ /*  std::cout << "\n\n=====================================================\n";
+   std::cout << "\t\tTask A : \n";
+   std::cout << "Enter number 1 : ";
+   //std::cin >> num1; scheduler update
+   std::cout << "Enter number 2: ";
+   //std::cin >> num2; schduler update
+   std::cout << "Result: " << RunAddition(num1, num2)<<std::endl;
+   vTaskDelay(2000);
+   PrintTaskOccured();
+   return 0;
+ }
+ */
