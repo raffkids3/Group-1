@@ -21,6 +21,6 @@ void vTaskA(void *pvParameters) {
         PrintTaskOccured();
 
         // Yield for 1000ms 
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        vTaskDelay(1000);
     }
 }
