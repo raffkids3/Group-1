@@ -1,4 +1,6 @@
 #include "timing_shared.h"
+#include "rtos_api.h"
+
 volatile uint32_t g_lastHeartbeatTick = 0;
 volatile int g_system_cycle_count = 0;
 
