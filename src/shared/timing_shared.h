@@ -1,12 +1,10 @@
 #pragma once
 #include <cstdint>
-#include "rtos_api.h" //Semaphore file 
+#include <mutex>
 
+// External declarations only (no variables created here)
 extern volatile uint32_t g_lastHeartbeatTick;
 extern volatile int g_system_cycle_count;
+extern std::mutex g_sharedResourceMutex;
 
-//Declare Mutex Handle
-extern SemaphoreHandle_t g_sharedResourceMutex;
-
-// initialization
-void InitSharedResources (); 
+void InitSharedResources();
