@@ -28,12 +28,16 @@
 #include "rtos_api.h"
 #include "TaskA.h"
 #include "TaskB.h"
+#include "timing_shared.h"
 
 int main()
 {
     std::cout << "=====================================================\n";
     std::cout << "CESC 450 Module 3 - Concurrent Avionics RTOS Active\n";
     std::cout << "=====================================================\n\n";
+
+ //Initialize the shared resources (Mutex) Before creating tasks
+ InitSharedResources();
 
     // Create Task A (Telemetry Simulation)
     if (!xTaskCreate(vTaskA, "Task_A", 256, nullptr, 1, nullptr))
