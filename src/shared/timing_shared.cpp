@@ -1,15 +1,10 @@
 #include "timing_shared.h"
-#include "rtos_api.h"
 
+// Actual variable definitions
 volatile uint32_t g_lastHeartbeatTick = 0;
 volatile int g_system_cycle_count = 0;
-
-//Define Mutex
-SemaphoreHandle_t g_sharedResourceMutex = NULL;
+std::mutex g_sharedResourceMutex;
 
 void InitSharedResources() {
-  //Create the mutex before tasks begins execution
-  g_sharedResourceMutex = xSemaphoreCreateMutex();
+    // std::mutex does not require explicit initialization
 }
-
-
